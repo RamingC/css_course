@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Alkatra&display=swap");
+body {
+  font-size: 22px;
+}
+.columns {
+  column-count: 4;
+  column-width: 250px;
+  column-rule: 3px solid;
+  column-gap: 2rem;
+}
+.columns p {
+  margin-top: 0;
+}
+.columns h2 {
+  margin-top: 0;
+  background-color: black;
+  color: white;
+  padding: 1rem;
+  break-inside: avoid;
+}
+.columns .qoute {
+  margin-top: 2rem;
+  font-size: 3rem;
+  text-align: center;
+  color: black;
+  column-span: all;
+}
+.nowarp {
+  white-space: nowrap;
+}
