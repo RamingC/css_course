@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Nunito", sans-serif;
+  min-height: 100vh;
+  background-color: rgb(121, 133, 129);
+  background-image: radial-gradient(whitesmoke, rgb(121, 133, 129));
+  display: flex;
+  flex-direction: column;
+}
+header,
+nav,
+main,
+footer {
+  display: grid;
+  place-content: center;
+  grid-template-columns: 100%;
+  text-align: center;
+}
+header,
+footer {
+  position: sticky;
+  background-color: palevioletred;
+  color: whitesmoke;
+  padding: 0.5rem;
+  border-bottom: 2px solid black;
+}
+nav {
+  background-color: white;
+  color: black;
+  padding: 0.5rem;
+  border-bottom: 2px solid black;
+}
+header {
+  top: 0;
+}
+main {
+  flex-grow: 1;
+}
+footer {
+  bottom: 0;
+}
+
+/* small */
+@media screen and (min-width: 576px) {
+  body {
+    background-color: blueviolet;
+    background-image: radial-gradient(whitesmoke, blueviolet);
+  }
+  nav {
+    display: none;
+  }
+}
+/* meduim */
+@media screen and (min-width: 768px) {
+  body {
+    background-color: rgb(58, 223, 85);
+    background-image: radial-gradient(whitesmoke, rgb(58, 223, 85));
+  }
+}
+/* large */
+@media screen and (min-width: 992px) {
+  body {
+    background-color: rgb(218, 231, 37);
+    background-image: radial-gradient(whitesmoke, rgb(218, 231, 37));
+  }
+}
+/* XL */
+@media screen and (min-width: 1200px) {
+  body {
+    background-color: rgb(16, 225, 240);
+    background-image: radial-gradient(whitesmoke, rgb(16, 225, 240));
+  }
+}
+/* Mobile Device Landscape */
+@media screen and (min-width: 425px) and (min-aspect-ratio: 7/4) {
+  body {
+    background-color: rgb(72, 28, 231);
+    background-image: radial-gradient(whitesmoke, rgb(72, 28, 231));
+  }
+}

@@ -47,6 +47,8 @@ body {
   color: #fff;
   font-size: 2rem;
   padding: 0.5rem;
+  place-content: center;
+  display: grid;
 }
 .box:first-child {
   background-color: gold;
